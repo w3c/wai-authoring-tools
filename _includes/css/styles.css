@@ -130,14 +130,6 @@
     margin-left: 0;
   }
 @media (min-width: 30em) {
-  .tool__features dl {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: .5em 1em;
-  }
-  .tool__features dt {
-    margin-top: 0;
-  }
   .tool__features dt small {
     font-weight: normal;
     margin-left: 1em;
@@ -199,4 +191,21 @@
     .submit-a-tool {
       grid-column: 7 / 9;
     }
+  }
+
+  [data-do-tabs] {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2em;
+  }
+  [data-tab] {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: .5em;
+  }
+  [data-tab-current] {
+    background-color: white;
+  } 
+  [data-tabpanel] dl:first-child {
+    margin-top: 0;
   }
